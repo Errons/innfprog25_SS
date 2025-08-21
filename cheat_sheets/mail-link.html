@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Mail Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail link</title>
     <link rel="stylesheet" type="text/css" href="variables.css">
-
 </head>
 <body>
+
+    <p id="maillink"></p>
+
     <script>
 
-        const name = "Snorre"
-        const mail = "snorrers@hiof.no"
+        const name = 'Snorre';
+        const mail = 'snorrers@hiof.no';
 
+        const emailLink = `<a href="mailto:${mail}">Send mail til ${name}</a>`;
+
+        document.getElementById('maillink').innerHTML = emailLink;
     </script>
+    
 </body>
 </html>
